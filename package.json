@@ -1,0 +1,13 @@
+{
+  "name": "rodrigo-nofault-landing",
+  "version": "1.0.0",
+  "description": "Landing Page Rodrigo Rodrigues - Apoio a Acidentados nos EUA (1-800-NO-FAULT)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'Static build ready'"
+  },
+  "keywords": ["landing-page", "1-800-no-fault", "advogados-usa"],
+  "author": "Rodrigo Rodrigues",
+  "license": "ISC"
+}

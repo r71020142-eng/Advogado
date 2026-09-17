@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Rodrigues | Apoio a Vítimas de Acidentes nos EUA - 1-800-NO-FAULT</title>
+    <meta name="description" content="Sofreu um acidente de carro, trabalho ou queda nos EUA? Faça sua triagem gratuita em português com Rodrigo Rodrigues e receba orientação para garantir sua indenização sem custos antecipados.">
+    
+    <!-- Favicon e Fontes Robustas (American Legal Marketing) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Ícones Font Awesome Icons via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Estilos Principais -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR DE ALERTA & URGÊNCIA -->
+    <aside class="top-alert-bar" aria-label="Alerta de urgência médica e legal">
+        <div class="container top-alert-content">
+            <span class="pulse-indicator"></span>
+            <p>
+                <strong>ALERTA IMPORTANTE:</strong> Sofreu um acidente na Flórida? Pela lei, você tem <strong>até 14 dias</strong> para atendimento médico. Não perca seus direitos!
+            </p>
+            <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20sofri%20um%20acidente%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20urgente." target="_blank" rel="noopener noreferrer" class="top-alert-link">
+                Falar Agora <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </aside>
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="brand-wrapper">
+                <a href="#inicio" class="logo-box">
+                    <div class="brand-icon">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-title">1-800-NO-FAULT</span>
+                        <span class="brand-subtitle">DO GRUPO NO-FAULT &bull; QA</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="header-badges">
+                <div class="badge-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Plantão 24/7</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Atendimento em Português</span>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20vi%20seu%20site%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20acidente%20nos%20EUA." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-header">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="btn-text-block">
+                        <span class="btn-subtext">Chame no WhatsApp</span>
+                        <span class="btn-phone">+1 (407) 766-3620</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="inicio">
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                
+                <!-- COLUNA DE TEXTO & CAPTURA RÁPIDA -->
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>APOIO A VÍTIMAS DE ACIDENTES NA FLÓRIDA &amp; EUA</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Sofreu um acidente de carro, trabalho ou queda nos EUA? <span class="gradient-text">Você pode ter direito a uma indenização.</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Não cometa erros que possam prejudicar seus direitos e comprometer uma futura compensação. Fale diretamente com <strong>Rodrigo Rodrigues</strong> no WhatsApp e receba triagem personalizada e sigilosa em português.
+                    </p>
+
+                    <!-- CAIXA INTERATIVA DE TRIAGEM RÁPIDA (GERA MENSAGEM NO WHATSAPP) -->
+                    <div class="triage-card">
+                        <div class="triage-card-header">
+                            <span class="triage-step-badge">TRIAGEM GRATUITA EM 1 MINUTO</span>
+                            <h3>Qual foi a sua situação?</h3>
+                            <p>Selecione as opções abaixo para iniciar o atendimento prioritário:</p>
+                        </div>
+
+                        <form id="triageForm" class="triage-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="accidentType">
+                                        <i class="fa-solid fa-car-burst"></i> Tipo de Acidente:
+                                    </label>
+                                    <select id="accidentType" name="accidentType" required>
+                                        <option value="Acidente de Carro / Trânsito" selected>🚗 Acidente de Carro / Veículo</option>
+                                        <option value="Motorista Fugiu (Hit and Run)">🏃 O Motorista Fugiu (Hit &amp; Run)</option>
+                                        <option value="Acidente como Passageiro ou Uber/Lyft">🚕 Passageiro / Uber / Lyft</option>
+                                        <option value="Acidente de Trabalho">🏗️ Acidente de Trabalho / Obra</option>
+                                        <option value="Escorregão ou Queda (Slip & Fall)">⚠️ Escorregão / Queda em Loja</option>
+                                        <option value="Outro tipo de acidente">📋 Outra Situação</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="accidentTime">
+                                        <i class="fa-regular fa-calendar-check"></i> Quando Aconteceu?
+                                    </label>
+                                    <select id="accidentTime" name="accidentTime" required>
+                                        <option value="Hoje ou Ontem" selected>Hoje ou Ontem</option>
+                                        <option value="Há menos de 14 dias">Há menos de 14 dias</option>
+                                        <option value="Há mais de 14 dias">Há mais de 14 dias</option>
+                                        <option value="Mais de 1 mês">Mais de 1 mês</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group full-width">
+                                    <label for="cityLocation">
+                                        <i class="fa-solid fa-location-dot"></i> Sua Cidade / Região nos EUA:
+                                    </label>
+                                    <input type="text" id="cityLocation" placeholder="Ex: Orlando, Kissimmee, Miami, Tampa..." value="Orlando, FL">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary-whatsapp pulse-button">
+                                <i class="fa-brands fa-whatsapp btn-main-icon"></i>
+                                <span>INICIAR ATENDIMENTO NO WHATSAPP</span>
+                                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                            </button>
+                        </form>
+
+                        <div class="triage-security-guarantee">
+                            <span><i class="fa-solid fa-lock"></i> Conversa 100% Sigilosa</span>
+                            <span><i class="fa-solid fa-handshake-simple"></i> Sem Custos Antecipados</span>
+                            <span><i class="fa-solid fa-user-shield"></i> Qualquer Status de Imigração</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUNA VISUAL: FOTO DO RODRIGO + ELEMENTOS DE CREDIBILIDADE -->
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper">
+                        
+                        <div class="profile-image-container">
+                            <img src="assets/images/rodrigo-main.jpg" alt="Rodrigo Rodrigues - No-Fault QA em Orlando" class="profile-img">
+                            
+                            <div class="verified-tag">
+                                <i class="fa-solid fa-circle-check"></i> No-Fault QA
+                            </div>
+                        </div>
+
+                        <div class="profile-info-card">
+                            <div class="online-status">
+                                <span class="status-dot"></span>
+                                <span>Disponível 24 Horas / 7 Dias por Semana</span>
+                            </div>
+                            <h2 class="profile-name">Rodrigo Rodrigues</h2>
+                            <p class="profile-role">Especialista em Apoio e Triagem de Acidentados nos EUA</p>
+                            
+                            <div class="profile-action-links">
+                                <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20acidente%20nos%20EUA." target="_blank" rel="noopener noreferrer" class="profile-cta-btn">
+                                    <i class="fa-brands fa-whatsapp"></i> +1 (407) 766-3620
+                                </a>
+                                <a href="https://www.instagram.com/rodrigoemorlando/" target="_blank" rel="noopener noreferrer" class="profile-instagram-btn" title="Ver Instagram Oficial">
+                                    <i class="fa-brands fa-instagram"></i> @rodrigoemorlando
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- FLOATING HIGHLIGHT CARD -->
+                        <div class="floating-highlight-box">
+                            <div class="highlight-icon">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <strong>Você Não Paga Nada do Seu Bolso</strong>
+                                <span>Honorários advocatícios apenas em caso de indenização obtida (Contingência).</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAIXA DE 4 PILARES DE CONFIANÇA (DO MATERIAL ORIGINAL) -->
+        <section class="trust-pillars-section">
+            <div class="container">
+                <div class="pillars-grid">
+                    
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <div class="pillar-content">
+                            <h4>Atendimento Humano</h4>
+                            <p>Apoio acolhedor e atencioso em português sempre que você precisar.</p>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <div class="pillar-content">
+                            <h4>Experiência &amp; Compromisso</h4>
+                            <p>Focados nos seus direitos e na melhor estratégia para o seu caso.</p>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-users-viewfinder"></i>
+                        </div>
+                        <div class="pillar-content">
+                            <h4>Resultados Comprovados</h4>
+                            <p>Histórico sólido conectando pessoas a advogados de excelência.</p>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <div class="pillar-content">
+                            <h4>Sem Custos Antecipados</h4>
+                            <p>Você não gasta nada agora. O foco é na sua recuperação e compensação.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: OS 3 MAIORES ERROS APÓS UM ACIDENTE (CONTEÚDO CRÍTICO) -->
+        <section class="errors-section" id="erros-comuns">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge badge-warning">
+                        <i class="fa-solid fa-triangle-exclamation"></i> ATENÇÃO AOS SEUS DIREITOS
+                    </span>
+                    <h2 class="section-title">
+                        Os 3 Maiores Erros Após um Acidente nos EUA
+                    </h2>
+                    <p class="section-desc">
+                        Eles podem prejudicar irremediavelmente seus direitos e comprometer qualquer futura indenização. Veja o que você <strong>jamais deve fazer</strong>:
+                    </p>
+                </div>
+
+                <div class="errors-grid">
+                    
+                    <div class="error-card">
+                        <div class="error-number">01</div>
+                        <div class="error-icon-box">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h3>Esperar para buscar atendimento médico</h3>
+                        <p>
+                            Na Flórida existe a <strong>Regra dos 14 Dias (PIP)</strong>. Se você não receber avaliação médica qualificada dentro deste prazo, você pode perder imediatamente até <strong>$10.000</strong> em cobertura de despesas médicas do seguro obrigatório. Mesmo sem dores fortes aparentes no dia, lesões de coluna e articulações costumam aparecer dias depois.
+                        </p>
+                        <div class="error-tip">
+                            <strong>Dica do Rodrigo:</strong> Faça a triagem médica imediatamente para resguardar seu direito.
+                        </div>
+                    </div>
+
+                    <div class="error-card highlight-error">
+                        <div class="error-number">02</div>
+                        <div class="error-icon-box">
+                            <i class="fa-solid fa-phone-slash"></i>
+                        </div>
+                        <h3>Falar ou assinar acordos com a seguradora sozinho</h3>
+                        <p>
+                            As seguradoras americanas trabalham para minimizar o valor que pagam a você. O agente de seguros ligará oferecendo um valor baixo "rápido" para que você assine uma renúncia total de direitos. <strong>Nunca dê depoimento gravado nem assine papéis</strong> antes de receber orientação especializada.
+                        </p>
+                        <div class="error-tip">
+                            <strong>Dica do Rodrigo:</strong> Deixe que os advogados conduzam qualquer negociação com a seguradora.
+                        </div>
+                    </div>
+
+                    <div class="error-card">
+                        <div class="error-number">03</div>
+                        <div class="error-icon-box">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <h3>Não registrar fotos nem chamar a polícia por receio de status</h3>
+                        <p>
+                            Muitos imigrantes deixam de chamar a polícia ou recolher provas por medo de perguntas sobre status imigratório. <strong>Nos EUA, a lei protege qualquer vítima de acidente</strong>, independente da sua situação de visto. O boletim policial (Police Report) e fotos dos veículos, placas e lesões são a base para sua indenização.
+                        </p>
+                        <div class="error-tip">
+                            <strong>Dica do Rodrigo:</strong> Você tem direitos civis garantidos. Não tenha medo de buscar ajuda!
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section-cta-box">
+                    <p>Cometeu algum desses passos ou está em dúvida sobre o que fazer agora?</p>
+                    <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20sofri%20um%20acidente%20e%20quero%20evitar%20erros%20no%20meu%20caso." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-mid">
+                        <i class="fa-brands fa-whatsapp"></i> Falar com o Rodrigo no WhatsApp Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO ESPECIAL: HIT AND RUN (O MOTORISTA FUGIU) -->
+        <section class="hit-and-run-section">
+            <div class="container hit-and-run-grid">
+                
+                <div class="hit-run-image-box">
+                    <img src="assets/images/post-motorista-fugiu.jpg" alt="O motorista fugiu após o acidente? E agora?" class="hit-run-img">
+                </div>
+
+                <div class="hit-run-content">
+                    <span class="section-badge badge-blue">
+                        <i class="fa-solid fa-car-on"></i> HIT AND RUN
+                    </span>
+                    <h2>O motorista fugiu após o acidente? <br><span class="highlight-cyan">E agora? O que fazer?</span></h2>
+                    <p class="hit-run-intro">
+                        Essa é uma das situações mais comuns e angustiantes na Flórida e nos Estados Unidos. Muitas vítimas acham que, porque o causador fugiu, estão desamparadas. <strong>Isso não é verdade!</strong>
+                    </p>
+
+                    <ul class="steps-checklist">
+                        <li>
+                            <div class="step-num"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <strong>Ligue para o 911 imediatamente:</strong>
+                                <span>Solicite a presença da polícia e relate imediatamente a fuga do veículo. O boletim policial é indispensável.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-num"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <strong>Anote tudo o que lembrar:</strong>
+                                <span>Cor do carro, modelo, marca, letras ou números parciais da placa e a direção para onde o veículo foi.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-num"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <strong>Procure testemunhas e câmeras:</strong>
+                                <span>Verifique se pessoas viram o ocorrido ou se comércios e semáforos próximos gravaram a batida.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-num"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <strong>Acione as coberturas de proteção (PIP / UM):</strong>
+                                <span>Sua própria apólice pode cobrir seus custos médicos e danos através das coberturas No-Fault e Uninsured Motorist.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="hit-run-cta">
+                        <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20sofri%20uma%20batida%20e%20o%20motorista%20fugiu%20(Hit%20and%20Run).%20Como%20proceder%3F" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-mid">
+                            <i class="fa-brands fa-whatsapp"></i> Fui Vítima de Hit &amp; Run &mdash; Me Ajude
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO: TIPOS DE CASOS ATENDIDOS -->
+        <section class="cases-section" id="casos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge badge-blue">
+                        <i class="fa-solid fa-briefcase"></i> ÁREAS DE SUPORTE
+                    </span>
+                    <h2 class="section-title">Casos Atendidos com Prioridade Total</h2>
+                    <p class="section-desc">
+                        Conectamos você aos advogados parceiros certos para cada tipo de lesão ou acidente ocorrido nos EUA.
+                    </p>
+                </div>
+
+                <div class="cases-grid">
+                    
+                    <!-- CASO 1: VEÍCULOS -->
+                    <div class="case-card">
+                        <div class="case-icon-wrapper">
+                            <i class="fa-solid fa-car-crash"></i>
+                        </div>
+                        <h3>Acidentes de Trânsito</h3>
+                        <p class="case-summary">
+                            Batidas traseiras, colisões em cruzamentos, capotamentos, colisões com pedestres, motos e caminhões comerciais.
+                        </p>
+                        <ul class="case-list">
+                            <li><i class="fa-solid fa-check-circle"></i> Carros particulares e alugados</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Uber, Lyft e Táxis (Passageiro ou Motorista)</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Motocicletas e Bicicletas</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Batidas onde o motorista fugiu (Hit &amp; Run)</li>
+                        </ul>
+                        <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20sofri%20um%20acidente%20de%20carro/tr%C3%A2nsito%20e%20preciso%20de%20ajuda." target="_blank" rel="noopener noreferrer" class="case-card-btn">
+                            Avaliar Caso de Trânsito <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- CASO 2: TRABALHO -->
+                    <div class="case-card featured-case">
+                        <div class="case-badge">MUITO COMUM ENTRE IMIGRANTES</div>
+                        <div class="case-icon-wrapper">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <h3>Acidentes de Trabalho</h3>
+                        <p class="case-summary">
+                            Lesões ocorridas no ambiente laboral (Workers' Compensation e reclamações contra terceiros negligentes).
+                        </p>
+                        <ul class="case-list">
+                            <li><i class="fa-solid fa-check-circle"></i> Quedas de andaimes, escadas e telhados</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Construção civil, reforma e pintura</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Cozinhas de restaurantes e queimaduras</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Lesões em galpões de carga e logística</li>
+                        </ul>
+                        <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20sofri%20um%20acidente%20de%20trabalho%20e%20quero%20saber%20meus%20direitos." target="_blank" rel="noopener noreferrer" class="case-card-btn">
+                            Avaliar Acidente de Trabalho <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- CASO 3: QUEDAS / SLIP & FALL -->
+                    <div class="case-card">
+                        <div class="case-icon-wrapper">
+                            <i class="fa-solid fa-person-falling"></i>
+                        </div>
+                        <h3>Escorregões e Quedas</h3>
+                        <p class="case-summary">
+                            Quedas causadas por pisos molhados sem aviso, buracos, desníveis e iluminação inadequada (Premises Liability).
+                        </p>
+                        <ul class="case-list">
+                            <li><i class="fa-solid fa-check-circle"></i> Supermercados (Walmart, Publix, Target, etc.)</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Restaurantes, shoppings e farmácias</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Condomínios, hotéis e áreas comuns</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Calçadas danificadas e escadarias</li>
+                        </ul>
+                        <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20sofri%20uma%20queda/escorreg%C3%A3o%20em%20um%20estabelecimento%20e%20preciso%20de%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="case-card-btn">
+                            Avaliar Queda / Slip &amp; Fall <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: COMO FUNCIONA (PASSO A PASSO) -->
+        <section class="how-it-works-section" id="como-funciona">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge badge-blue">
+                        <i class="fa-solid fa-route"></i> PROCESSO SIMPLES
+                    </span>
+                    <h2 class="section-title">Como Funciona o Apoio do Rodrigo Rodrigues</h2>
+                    <p class="section-desc">
+                        Do primeiro "oi" no WhatsApp até o encaminhamento com advogados experientes, tudo é rápido, acolhedor e transparente.
+                    </p>
+                </div>
+
+                <div class="process-steps-grid">
+                    
+                    <div class="step-card">
+                        <div class="step-indicator">PASSO 1</div>
+                        <div class="step-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3>Primeiro Contato no WhatsApp</h3>
+                        <p>Você envia uma mensagem para o Rodrigo relatando brevemente o que aconteceu. Atendimento ágil e 100% em português.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-indicator">PASSO 2</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3>Triagem e Análise do Caso</h3>
+                        <p>Avaliamos as circunstâncias do acidente, documentação policial, fotos e encaminhamentos médicos necessários.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-indicator">PASSO 3</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>Conexão com Advogados</h3>
+                        <p>Conectamos você diretamente com escritórios de advocacia parceiros e licenciados, especialistas no seu tipo de caso.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-indicator">PASSO 4</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3>Você Só Paga se Ganhar</h3>
+                        <p>Os advogados atuam no modelo de contingência. Não há mensalidades nem custos do seu bolso durante o processo.</p>
+                    </div>
+
+                </div>
+
+                <div class="banner-cta-horizontal">
+                    <div class="banner-text">
+                        <h3>Dúvidas sobre o que aconteceu no seu caso?</h3>
+                        <p>A consulta e triagem inicial são totalmente gratuitas e confidenciais.</p>
+                    </div>
+                    <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20gostaria%20de%20fazer%20uma%20triagem%20gratuita%20do%20meu%20caso." target="_blank" rel="noopener noreferrer" class="btn btn-primary-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Falar com Rodrigo (+1 407 766-3620)
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO: SOBRE O RODRIGO RODRIGUES & ORLANDO -->
+        <section class="about-rodrigo-section" id="sobre">
+            <div class="container about-grid">
+                
+                <div class="about-image-col">
+                    <div class="about-image-frame">
+                        <img src="assets/images/flyer-atendimento.jpg" alt="Rodrigo Rodrigues - Atendimento 24/7 No-Fault QA" class="about-img">
+                        <div class="about-badge-overlay">
+                            <i class="fa-solid fa-certificate"></i>
+                            <div>
+                                <strong>Rodrigo Rodrigues</strong>
+                                <span>NO-FAULT QA &bull; Orlando, FL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-col">
+                    <span class="section-badge badge-blue">
+                        <i class="fa-solid fa-user"></i> SOBRE O SEU PONTO DE APOIO
+                    </span>
+                    <h2>Compromisso Real com a Comunidade nos EUA</h2>
+                    
+                    <p class="lead-paragraph">
+                        Mudar de país e construir uma vida nos Estados Unidos exige coragem. Quando um acidente inesperado acontece, o medo da língua, a falta de conhecimento das leis e o receio pelo status de imigração podem paralisar você.
+                    </p>
+
+                    <p>
+                        <strong>Rodrigo Rodrigues</strong> atua como a ponte de confiança entre a comunidade brasileira/latina e a rede jurídica americana de acidentes (1-800-NO-FAULT). Com presença forte em Orlando e atendimento abrangente, sua missão é garantir que você não seja enganado por seguradoras e tenha o suporte médico e legal de primeira linha.
+                    </p>
+
+                    <div class="about-points">
+                        <div class="about-point-item">
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <strong>Linguagem clara, sem juridiquês:</strong>
+                                <span>Você entende cada etapa do seu processo na sua língua nativa.</span>
+                            </div>
+                        </div>
+                        <div class="about-point-item">
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <strong>Apoio 24 Horas / 7 Dias por Semana:</strong>
+                                <span>Acidentes não escolhem dia nem hora para acontecer. Estamos sempre a postos.</span>
+                            </div>
+                        </div>
+                        <div class="about-point-item">
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <strong>Respeito e Acolhimento:</strong>
+                                <span>Tratamos o seu momento de fragilidade com a dignidade e urgência que ele merece.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-social-links">
+                        <a href="https://www.instagram.com/rodrigoemorlando/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">
+                            <i class="fa-brands fa-instagram"></i> Siga no Instagram @rodrigoemorlando
+                        </a>
+                        <a href="https://wa.me/14077663620" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-outline">
+                            <i class="fa-brands fa-whatsapp"></i> Conversar Direto no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO: CONTEÚDOS & ORIENTAÇÕES DO INSTAGRAM -->
+        <section class="social-proof-posts-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge badge-blue">
+                        <i class="fa-brands fa-instagram"></i> CONTEÚDO EDUCATIVO
+                    </span>
+                    <h2 class="section-title">Orientações Oficiais do Rodrigo no Instagram</h2>
+                    <p class="section-desc">
+                        Informação clara para que você não caia em armadilhas de seguradoras nos Estados Unidos.
+                    </p>
+                </div>
+
+                <div class="social-cards-grid">
+                    <div class="social-post-card">
+                        <div class="social-post-img-wrap">
+                            <img src="assets/images/post-erros-acidente.jpg" alt="Post: Os 3 maiores erros após um acidente">
+                        </div>
+                        <div class="social-post-body">
+                            <h4>Os 3 Maiores Erros Após um Acidente</h4>
+                            <p>Eles podem prejudicar seus direitos e até comprometer uma futura indenização.</p>
+                            <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20vi%20o%20post%20sobre%20os%203%20erros%20ap%C3%B3s%20acidente%20e%20preciso%20de%20ajuda." target="_blank" rel="noopener noreferrer" class="social-link-btn">
+                                Tirar Dúvida no WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social-post-card">
+                        <div class="social-post-img-wrap">
+                            <img src="assets/images/post-motorista-fugiu.jpg" alt="Post: O motorista fugiu após o acidente? E agora?">
+                        </div>
+                        <div class="social-post-body">
+                            <h4>O Motorista Fugiu (Hit &amp; Run)?</h4>
+                            <p>Descubra os passos exatos para não perder cobertura mesmo sem a identificação imediata.</p>
+                            <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20sofri%20um%20acidente%20com%20motorista%20em%20fuga%20(Hit%20and%20Run)." target="_blank" rel="noopener noreferrer" class="social-link-btn">
+                                Falar Sobre Hit &amp; Run <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social-post-card">
+                        <div class="social-post-img-wrap">
+                            <img src="assets/images/post-o-que-fotografar.jpg" alt="Post: O que fotografar no local do acidente?">
+                        </div>
+                        <div class="social-post-body">
+                            <h4>O Que Fotografar no Acidente?</h4>
+                            <p>Fotos da posição dos veículos, placas e danos fazem toda a diferença para garantir sua indenização.</p>
+                            <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20vi%20o%20post%20sobre%20o%20que%20fotografar%20no%20acidente%20e%20preciso%20de%20ajuda." target="_blank" rel="noopener noreferrer" class="social-link-btn">
+                                Tirar Dúvida no WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-feed-footer text-center">
+                    <a href="https://www.instagram.com/rodrigoemorlando/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">
+                        <i class="fa-brands fa-instagram"></i> Acompanhe mais vídeos e dicas no @rodrigoemorlando
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: PERGUNTAS FREQUENTES (FAQ ACCORDION) -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge badge-blue">
+                        <i class="fa-solid fa-circle-question"></i> TIRE SUAS DÚVIDAS
+                    </span>
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <p class="section-desc">
+                        Respostas diretas para as perguntas mais comuns de quem sofreu um acidente nos EUA.
+                    </p>
+                </div>
+
+                <div class="faq-accordion" id="faqAccordion">
+                    
+                    <details class="faq-item" open>
+                        <summary class="faq-question">
+                            <span>1. Não tenho status legal (visto / Green Card) nos EUA. Ainda tenho direito a indenização?</span>
+                            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>SIM, ABSOLUTAMENTE!</strong> A lei americana de compensação por acidentes e danos pessoais protege qualquer indivíduo que esteja em solo americano, independente do seu status migratório. Nem a polícia nem os advogados parceiros compartilharão seu status com autoridades de imigração. Você tem pleno direito a atendimento médico e indenização justa.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>2. Quanto custa a consulta e a contratação dos advogados?</span>
+                            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>Você não paga absolutamente nada adiantado.</strong> O atendimento do Rodrigo e a consulta com os advogados credenciados são 100% gratuitos. Os advogados parceiros trabalham no sistema de contingência (<em>"No Win, No Fee"</em>): eles apenas recebem uma porcentagem pré-acordada sobre o valor da indenização que conquistarem para você da seguradora. Se não houver indenização, você não deve nada.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>3. O que é a "Regra dos 14 Dias" na Flórida?</span>
+                            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                A Flórida é um estado que adota o sistema "No-Fault" (sem culpa), exigindo que todo motorista tenha a cobertura PIP (Personal Injury Protection). Para ter direito a até <strong>$10.000</strong> em despesas médicas cobertas pelo PIP, a lei exige que você consulte um médico ou clínica qualificada <strong>em até 14 dias após o acidente</strong>. Se você deixar passar esse prazo, perde esse benefício indispensável!
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>4. O motorista que bateu em mim fugiu do local. O que acontece agora?</span>
+                            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Mesmo quando o causador foge (Hit and Run), você ainda possui direitos fundamentais. Através da cobertura PIP e da cobertura de motorista sem seguro (Uninsured Motorist - UM), sua própria seguradora pode ser acionada para cobrir seus custos médicos, salários perdidos e compensação por dor e sofrimento. Fale com o Rodrigo imediatamente para saber como documentar isso da forma correta.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>5. Sofri um acidente de trabalho. Posso ser demitido se buscar indenização?</span>
+                            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                A lei americana proíbe qualquer retaliação ou demissão ilegal pelo simples fato de o funcionário solicitar o seguro de compensação de trabalhadores (Workers' Comp). Além disso, em muitos casos, a negligência envolve terceiros (como donos de imóveis, fornecedores ou fabricantes de ferramentas), permitindo uma ação paralela de indenização expressiva.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>6. O que o seguro cobre em uma indenização por acidente?</span>
+                            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Uma indenização bem conduzida pode cobrir: todas as despesas de hospital, exames, cirurgias e fisioterapia; salários e rendas que você deixou de ganhar por estar incapacitado; conserto ou pagamento do valor de tabela do veículo com perda total; e indenização monetária por dor física, traumas e sofrimento.
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+
+                <div class="faq-extra-help text-center">
+                    <p>Tem outra dúvida específica sobre a sua situação?</p>
+                    <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20tenho%20uma%20d%C3%BAvida%20espec%C3%ADfica%20sobre%20meu%20acidente." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-mid">
+                        <i class="fa-brands fa-whatsapp"></i> Perguntar Diretamente no WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO FINAL: CTA DE EMERGÊNCIA / PLANTÃO 24/7 -->
+        <section class="final-cta-section">
+            <div class="container text-center">
+                <div class="final-cta-card">
+                    <div class="pulse-ring"></div>
+                    <span class="cta-subtitle-tag">PLANTÃO 24 HORAS &bull; RESPOSTA IMEDIATA</span>
+                    <h2>Não deixe o tempo jogar contra os seus direitos.</h2>
+                    <p>
+                        A cada dia que passa, câmeras são apagadas, testemunhas mudam de contato e os prazos legais se encurtam. Fale com o Rodrigo Rodrigues agora mesmo e tenha clareza do seu caso.
+                    </p>
+
+                    <div class="cta-buttons-group">
+                        <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20acabei%20de%20ler%20o%20site%20e%20quero%20iniciar%20minha%20triagem%20gratuita." target="_blank" rel="noopener noreferrer" class="btn btn-primary-whatsapp btn-large">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>CHAMAR NO WHATSAPP: +1 (407) 766-3620</span>
+                        </a>
+                        <a href="tel:+14077663620" class="btn btn-call-now">
+                            <i class="fa-solid fa-phone"></i> Ligar Agora
+                        </a>
+                    </div>
+
+                    <div class="final-disclaimer-badges">
+                        <span><i class="fa-solid fa-check-double"></i> Atendimento Gratuito</span>
+                        <span><i class="fa-solid fa-language"></i> Português / English / Español</span>
+                        <span><i class="fa-solid fa-lock"></i> Sigilo Absoluto</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER & COMPLIANCE LEGAL (OBRIGATÓRIO NOS EUA) -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            
+            <div class="footer-top-grid">
+                
+                <div class="footer-brand-col">
+                    <div class="brand-box">
+                        <div class="brand-icon">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                        </div>
+                        <div class="brand-text">
+                            <span class="brand-title">1-800-NO-FAULT</span>
+                            <span class="brand-subtitle">DO GRUPO NO-FAULT</span>
+                        </div>
+                    </div>
+                    <p class="footer-bio">
+                        Apoio, suporte e encaminhamento especializado para vítimas de acidentes na Flórida e em todos os Estados Unidos. Conectando pessoas a advogados de excelência com ética e agilidade.
+                    </p>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h4>Contato Direto</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="https://wa.me/14077663620" target="_blank" rel="noopener noreferrer">+1 (407) 766-3620</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="https://www.instagram.com/rodrigoemorlando/" target="_blank" rel="noopener noreferrer">@rodrigoemorlando</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Orlando, FL &mdash; Atendendo todo o estado e comunidade nos EUA</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Disponibilidade: 24 horas por dia, 7 dias por semana</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-coverage-col">
+                    <h4>Casos Atendidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#casos">Acidentes de Trânsito &amp; Carro</a></li>
+                        <li><a href="#erros-comuns">Motorista Fugiu (Hit &amp; Run)</a></li>
+                        <li><a href="#casos">Acidentes em Obras e Construção</a></li>
+                        <li><a href="#casos">Quedas e Escorregões (Slip &amp; Fall)</a></li>
+                        <li><a href="#casos">Passageiros de Uber e Lyft</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- AVISO LEGAL OBRIGATÓRIO (COMPLIANCE ESTADUNIDENSE) -->
+            <div class="footer-compliance-box">
+                <div class="compliance-badge">
+                    <i class="fa-solid fa-shield-halved"></i> NOTA DE COMPLIANCE JURÍDICO (FLORIDA &amp; US LAW)
+                </div>
+                <p>
+                    <strong>Nota e Isenção de Responsabilidade:</strong> Rodrigo Rodrigues não é advogado e não oferece consultoria, aconselhamento ou representação jurídica direta. Os serviços prestados consistem em acolhimento, triagem preliminar de ocorrências e encaminhamento qualificado para escritórios de advocacia parceiros devidamente licenciados na Flórida e nas respectivas jurisdições dos Estados Unidos. 
+                </p>
+                <p>
+                    A consulta inicial para triagem é totalmente gratuita. Os honorários advocatícios, quando aplicáveis, são de responsabilidade do escritório parceiro sob contrato de honorários de contingência (onde o cliente só remunera o escritório caso haja obtenção de compensação financeira ou acordo favorável). Resultados passados não constituem garantia de resultados idênticos em casos futuros.
+                </p>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Rodrigo Rodrigues &bull; 1-800-NO-FAULT QA. Todos os direitos reservados.</p>
+                <div class="footer-lang-tags">
+                    <span>🇺🇸 Orlando, FL</span>
+                    <span>🇧🇷 Atendimento em Português</span>
+                    <span>🇪🇸 Atención en Español</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP (CONVERSÃO MÁXIMA MOBILE & DESKTOP) -->
+    <div class="floating-whatsapp-wrapper" id="floatingWhatsapp">
+        <div class="floating-whatsapp-tooltip">
+            <span class="pulse-green"></span>
+            <strong>Rodrigo Rodrigues</strong>
+            <small>Online agora &bull; Fale no WhatsApp</small>
+        </div>
+        <a href="https://wa.me/14077663620?text=Ol%C3%A1%20Rodrigo,%20sofri%20um%20acidente%20nos%20EUA%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Abrir conversa no WhatsApp com Rodrigo Rodrigues">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="notification-badge">1</span>
+        </a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+</body>
+</html>
